@@ -1,8 +1,8 @@
 {
-  "name": "sushi",
-  "version": "0.1.0",
+  "name": "donremolo",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "https://sharmyn28.github.io/SUSHI/",
+  "homepage": "",
   "dependencies": {
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",

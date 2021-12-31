@@ -9,7 +9,7 @@ import ShoppingCart from './shoppingCart';
 import { dishes, shopDishes } from './dishes';
 import { deleteAll } from './actions';
 
-const Checkout = () => {
+const Checkout = ({ shopDishes }) => {
     const Listdishs = shopDishes.map((item, index) => {
         return (
             <table>
@@ -32,7 +32,7 @@ const Checkout = () => {
     });
 
 
-    //let totalDishes = shopDishes.length;
+    let totalDishes = shopDishes.length;
     let totalPrice = shopDishes.reduce(function (total, dish) {
         return total + (dish.price * dish.count);
     }, 0);
@@ -67,7 +67,7 @@ const Checkout = () => {
     )
 }
 
-const CheckoutView = () => {
+const CheckoutView = ({ shopDishes }) => {
     return (
         <div id='application' >
             <div>

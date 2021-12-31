@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component} from 'react';
 import './Carousel.css';
-import {shopDishes, dishes, selectedFood} from './dishes'
+//import {shopDishes, dishes, selectedFood} from './dishes'
 import { connect } from 'redux-zero/react';
 import { nextAction, previewAction } from './actions-diana';
 import Header from './header';
@@ -51,7 +51,7 @@ const InfoDish = ({ image, name, description, price, nutritional, nutritionalInf
 	)
 }
 
-const Carousel = () => {
+const Carousel = ({dishes, selectedFood}) => {
 	console.log("dishes", selectedFood)
 	return (
 		<div className="background-fish">
@@ -101,7 +101,7 @@ const Carousel = () => {
 
 }
 
-const CarouselView = () => {
+const CarouselView = ({ dishes, selectedFood, shopDishes }) => {
 	return (
 		<div id='application'>
 			<div>

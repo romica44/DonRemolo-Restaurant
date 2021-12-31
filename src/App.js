@@ -8,7 +8,7 @@ import Home from './Home'
 import { connect } from 'redux-zero/react';
 import Footer from './footer';
 
-const App = () => {
+const App = ({dishes, shopDishes}) => {
   return (
     <div id='application' >
       <div>

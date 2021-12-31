@@ -1,7 +1,7 @@
 import React from 'react';
 import './shoppingCart.css';
 import {NavLink} from 'react-router-dom';
-import {shopDishes } from './dishes';
+import {dishes, shopDishes } from './dishes';
 import {removeDish, deleteAll} from './actions';
 import './App.css';
 
@@ -18,7 +18,7 @@ const Dish = ({src, price, count, removeDish}) => {
 	)
 }
 
-const ShoppingCart = () => {
+const ShoppingCart = ({shopDishes}) => {
  	const dishesList = shopDishes.map((dish, index) =>{
 		return(
 			<Dish 
@@ -32,7 +32,7 @@ const ShoppingCart = () => {
 		)
 	})
 
-	//let totalDishes = shopDishes.length;
+	let totalDishes = shopDishes.length;
 	let totalPrice = shopDishes.reduce(function (total, dish){
 		return total + (dish.price*dish.count);
 	}, 0);

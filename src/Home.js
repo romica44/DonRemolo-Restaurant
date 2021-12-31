@@ -1,6 +1,6 @@
 import React from 'react';
-import {Provider, connect} from 'redux-zero/react';
-//import { NavLink } from 'react-router-dom';
+import { connect } from 'redux-zero/react';
+import { NavLink } from 'react-router-dom';
 import { addDishes, moveSlides } from './actions'
 import './App.css';
 

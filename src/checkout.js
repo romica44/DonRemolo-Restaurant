@@ -58,8 +58,8 @@ const Checkout = ({ shopDishes }) => {
                     </table>
                     {Listdishs}
                     <p id="total-checkout"><em>total:</em><span data-bind="text: totalPrice">${totalPrice}</span></p>
-                    <NavLink to={"/home"} className="cancel-order" href="#" data-bind="click: emptyCart" onClick={() => deleteAll()}>cancel order</NavLink>
-                    <NavLink to={"/home"} className="btn btn order-now" data-bind="click: proceed" onClick={() => deleteAll()}>order now! </NavLink>
+                    <NavLink to={"#/home"} className="cancel-order" data-bind="click: emptyCart" onClick={() => deleteAll()}>cancel order</NavLink>
+                    <NavLink to={'https://api.whatsapp.com/send?phone=""&text=Hola quiero info'} className="btn btn order-now" data-bind="click: proceed" onClick={() => deleteAll()}>order now! </NavLink>
                 </div>
                 <div id="checkout-bottom-image"></div>
             </div>

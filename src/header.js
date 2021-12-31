@@ -5,7 +5,7 @@ const Header = ({shopDishes}) => {
 	return (
 		<div id='header'>
 			<h1 className='logo sushi-logo'>
-				<a href='#/'> </a>
+				<a href='/'> </a>
 			</h1>
 			<a id='cart-info'>Shopping cart
 				<span> 

@@ -17,7 +17,7 @@ const Checkout = ({ shopDishes }) => {
                     <tr>
                         <td>
                             <div class="cart-image-wrapper">
-                                <img src={item.image} alt= ""/></div>
+                                <img src={item.image}/></div>
                             <span class="product-name" data-bind="text: item.name">{item.name}</span>
                         </td>
                         <td><input type="number" class="inputnumber k-widget k-numerictextbox" name="lastname" value={item.count} /></td>
@@ -59,7 +59,7 @@ const Checkout = ({ shopDishes }) => {
                     {Listdishs}
                     <p id="total-checkout"><em>total:</em><span data-bind="text: totalPrice">${totalPrice}</span></p>
                     <NavLink to={"#/home"} className="cancel-order" data-bind="click: emptyCart" onClick={() => deleteAll()}>cancel order</NavLink>
-                    <NavLink to={'https://api.whatsapp.com/send?phone=""&text=Hola quiero info'} className="btn btn order-now" data-bind="click: proceed" onClick={() => deleteAll()}>order now! </NavLink>
+                    <NavLink to={'https://api.whatsapp.com/send?phone=""&text=Hola quiero info'} className="btn btn order-now" data-bind="click: proceed" onClick={() => deleteAll()}>Envia tu pedido por Whatsapp! </NavLink>
                 </div>
                 <div id="checkout-bottom-image"></div>
             </div>

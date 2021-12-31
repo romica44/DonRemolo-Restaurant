@@ -1,10 +1,13 @@
-.sushi-logo{
-    background: url(/imagenes/header.jpg) 0 0 no-repeat;
+
+.headlogo{
+    background: url(https://i.ibb.co/vxCgbFK/header.jpg);
+    background-size: cover;
 }
 
 a {
     text-decoration:none;
     color:#000;
+    
 }
 
 h1, h2, h3, #main-nav, #main-nav li, ul, ul li {
@@ -14,19 +17,20 @@ h1, h2, h3, #main-nav, #main-nav li, ul, ul li {
 }
 
 /*header section*/
-h1.logo{
-    display: inline-block;
-    width: 140px;
-    height: 32px;
+h1.logo-remolo{
+      
+    display: flex;
+    justify-content: space-around;
 }
     
 h1 a{
-      display: inline-block;
+      display:flex;
       width: 100%;
       height: 100%;
 }
     
 #header{
     padding-bottom: 40px;
-    border-bottom: 1px solid #535353;
+    border-bottom: 1px solid black;
+    background-color: white;
 }

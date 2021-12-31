@@ -1,5 +1,6 @@
 body{
-    background: url(http://demos.telerik.com/kendo-ui/content/spa/websushi/css/images/background-image.png);
+    background-image: url(https://i.ibb.co/cYzGgjg/60f453bd1fe7d061e8fe4d766d830134.jpg);
+    background-size: cover;
 }
 
 .currentDish{

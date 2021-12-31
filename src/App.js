@@ -15,7 +15,7 @@ const App = () => {
         <div id='wrapper'>
           <Header shopDishes={shopDishes}/>
           <div id='main-section'>
-            {shopDishes.length!=0?<ShoppingCart shopDishes={shopDishes} />:<div id='header'></div>}
+            {shopDishes.length!==0?<ShoppingCart shopDishes={shopDishes} />:<div id='header'></div>}
             <Home dishes={dishes} />
           </div>
           <Footer />
@@ -23,7 +23,7 @@ const App = () => {
       </div>
     </div >
   );
-  console.log("dish",dishes);
+  console.log("dish", dishes);
 }
 
 const mapToProps = ({ dishes, shopDishes }) => ({ dishes, shopDishes });

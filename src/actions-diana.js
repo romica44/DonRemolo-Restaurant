@@ -4,7 +4,7 @@ import store from './store';
 export const nextAction = () => {
 
     let selectedFood = store.getState().selectedFood + 1
-    if (selectedFood == store.getState().dishes.length)
+    if (selectedFood === store.getState().dishes.length)
         selectedFood = 0
 
     store.setState({

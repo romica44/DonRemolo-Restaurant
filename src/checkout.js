@@ -1,5 +1,5 @@
 import React  from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import { NavLink } from 'react-router-dom';
 import { connect } from "redux-zero/react";
@@ -9,7 +9,7 @@ import ShoppingCart from './shoppingCart';
 import { dishes, shopDishes } from './dishes';
 import { deleteAll } from './actions';
 
-const Checkout = ({ shopDishes }) => {
+const Checkout = () => {
     const Listdishs = shopDishes.map((item, index) => {
         return (
             <table>
@@ -17,7 +17,7 @@ const Checkout = ({ shopDishes }) => {
                     <tr>
                         <td>
                             <div class="cart-image-wrapper">
-                                <img src={item.image} /></div>
+                                <img src={item.image} alt= ""/></div>
                             <span class="product-name" data-bind="text: item.name">{item.name}</span>
                         </td>
                         <td><input type="number" class="inputnumber k-widget k-numerictextbox" name="lastname" value={item.count} /></td>
@@ -32,7 +32,7 @@ const Checkout = ({ shopDishes }) => {
     });
 
 
-    let totalDishes = shopDishes.length;
+    //let totalDishes = shopDishes.length;
     let totalPrice = shopDishes.reduce(function (total, dish) {
         return total + (dish.price * dish.count);
     }, 0);
@@ -67,14 +67,14 @@ const Checkout = ({ shopDishes }) => {
     )
 }
 
-const CheckoutView = ({ shopDishes }) => {
+const CheckoutView = () => {
     return (
         <div id='application' >
             <div>
                 <div id='wrapper'>
                     <Header shopDishes={shopDishes} />
                     <div id='main-section'>
-                        {shopDishes.length != 0 ? <ShoppingCart shopDishes={shopDishes} /> : <div id='header'></div>}
+                        {shopDishes.length !== 0 ? <ShoppingCart shopDishes={shopDishes} /> : <div id='header'></div>}
                         <Checkout shopDishes={shopDishes} />
                     </div>
                     <Footer />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect} from 'redux-zero/react';
+import {Provider, connect} from 'redux-zero/react';
 //import { NavLink } from 'react-router-dom';
 import { addDishes, moveSlides } from './actions'
 import './App.css';
@@ -15,7 +15,7 @@ const Lista_Dishes = ({ image, name, price, index, moveSlides }) => {
           <span>{price}</span>
         </span>
       </a>
-      <button className="add-to-cart" onClick={() => addDishes(index)}>Add to cart</button>
+      <button className="add-to-cart" onClick={() => addDishes(index)}>Agrerar al carrito</button>
     </li>
   );
 }
@@ -40,4 +40,4 @@ const Home = ({ dishes }) => {
   </section>)
 }
 
-export default Home;
+export default Home

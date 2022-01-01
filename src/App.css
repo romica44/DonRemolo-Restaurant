@@ -248,7 +248,7 @@ h3{
 
 #empty-cart{
   display: inline-block;
-  width: 89px;
+  width: 80px;
   height: 28px;
   line-height: 28px;
   vertical-align: middle;
@@ -256,7 +256,7 @@ h3{
   text-transform: uppercase;
   color: #ff3170;
   background-color: #1f1f1f;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 #empty-cart:hover{
@@ -274,7 +274,7 @@ h3{
   background: linear-gradient(to bottom,  rgba(214,0,65,1) 0%,rgba(169,0,64,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d60041', endColorstr='#a90040',GradientType=0 );
   position: relative;
-  padding: 0 18px 0 10px;
+  padding: 0 18px 0 17px;
   color: #ffffff;
   height: 28px;
   width: 83px;
@@ -744,6 +744,7 @@ p#details-total-price span{
 #details-checkout img {
 vertical-align: middle;
 padding-right: 40px;
+height: 100px;
 }
 
 table{
@@ -756,7 +757,7 @@ table{
 thead{
   font-size: 13px;
   color: #4a4a4a;
-  text-transform: uppercase;
+ text-transform: uppercase;
 }
 
 thead th{
@@ -789,14 +790,15 @@ table thead th:first-child + th + th {
 }
 
 table tbody input{
-  width: 70px;
+  width: 40px;
   border: 1px solid #dadada;
-  font-size: 17px;
+  font-size: 16px;
+  margin-right: 100px;
   color: #2e2e2e;
 }
 
 table tbody td:first-child {
-  font-size: 21px;
+  font-size: 16px;
   color: #2e2e2e;
   width: 530px;
 }
@@ -880,7 +882,7 @@ table tbody td:first-child + td + td p{
   background-color: #fff;
   text-align: center;
   margin-bottom: 49px;
-  margin-top: 54px;
+  margin-top: 60px;
 }
 
 .cancel-order:hover {

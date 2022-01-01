@@ -7,9 +7,9 @@ const Header = ({shopDishes}) => {
 			<h1 className='headlogo'>
 				<a href='#/'> </a>
 			</h1>
-			<a id='cart-info'>Menu
+			<a href='#/' id='cart-info'>Menu
 				<span> 
-					<span>{shopDishes.length}</span> CARRITO
+					<span>{shopDishes.length}</span> items
 				</span>
 			</a>
 	

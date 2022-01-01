@@ -43,23 +43,23 @@ const Checkout = ({ shopDishes }) => {
     return (
         <section id="content" className="style section-final" >
             <div>
-                <div id="checkout-top-image"></div>
+                <div></div>
                 <div id="details-checkout">
-                    <h1>Order Details</h1>
+                    <h1>Detalle de tu pedido</h1>
                     <table>
                         <thead>
                             <tr>
                                 <th>Item</th>
                                 <th></th>
-                                <th>Quantity</th>
-                                <th className="text-right">Price</th>
+                                <th>Cantidad</th>
+                                <th className="text-right">Precio</th>
                             </tr>
                         </thead>
                     </table>
                     {Listdishs}
                     <p id="total-checkout"><em>total:</em><span data-bind="text: totalPrice">${totalPrice}</span></p>
-                    <NavLink to={"#/home"} className="cancel-order" data-bind="click: emptyCart" onClick={() => deleteAll()}>cancel order</NavLink>
-                    <NavLink to={'https://api.whatsapp.com/send?phone=""&text=Hola quiero info'} className="btn btn order-now" data-bind="click: proceed" onClick={() => deleteAll()}>Envia tu pedido por Whatsapp! </NavLink>
+                    <NavLink to={"/"} className="cancel-order" data-bind="click: emptyCart" onClick={() => deleteAll()}>cancelar</NavLink>
+                    <NavLink to={'https://api.whatsapp.com/send?phone=""&text=Hola quiero info'} className="btn btn order-now" data-bind="click: proceed" onClick={() => deleteAll()}>Enviar pedido </NavLink>
                 </div>
                 <div id="checkout-bottom-image"></div>
             </div>

@@ -14,8 +14,8 @@ const InfoDish = ({ image, name, description, price, nutritional, nutritionalInf
 			className="carousel-inner text-center"
 			role="listbox">
 			<div className="item active">
-				<div className="col-lg-3 pull-left">
-					<img className="img1" src={image} />
+				<div className="col-lg-3 pull-left" >
+					<img className="img1" src={image}/>
 				</div>
 				<div className="col-lg-6 info-middle">
 					<br />

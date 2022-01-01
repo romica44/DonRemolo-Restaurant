@@ -660,7 +660,7 @@ p#details-total-price span{
 }
 
 .last-div{
-  border-left-color: #615F5F;
+  border-left-color: #5e5b5b;
   height: 100%;
 }
 
@@ -967,7 +967,7 @@ table tbody td:first-child + td + td p{
   border-top: 1px solid #535353;
   font-size: 12px;
   padding-bottom: 60px;
-  color: #999;
+  color: rgb(145, 144, 144);
 }
 
 #footer p {
@@ -996,7 +996,7 @@ table tbody td:after{
 }
 
 .cart-image-wrapper {
-  display: inline-block;
+  display: flex;
   float: left;
   height: 100px;
   overflow: hidden;

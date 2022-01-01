@@ -183,8 +183,11 @@ h1 a{
 }
 
 #shop-info {
-  height: 122px;
+  float:right;
+  position: absolute;
+  height: 120px;
   background: #000000;
+
   margin-bottom: 20px;
   overflow: hidden;
   -webkit-transition: all 200ms ease-out;
@@ -220,10 +223,10 @@ h3{
 }
 
 #shopping-cart{
-  position: relative;
+  position: top;
   text-align: right;
-  float: right;
-  width: 300px;
+  float: left;
+  width: 200px;
   background-color: #1f1f1f;
   height: 100%;
 }

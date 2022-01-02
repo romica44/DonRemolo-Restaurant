@@ -24,7 +24,7 @@ const App = ({pizzas, shopDishes}) => {
       </div>
     </div >
   );
-  console.log("dish", pizzas);
+  //console.log("dish", pizzas);
 }
 
 const mapToProps = ({ pizzas, shopDishes }) => ({ pizzas, shopDishes });

@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React from 'react';
 import './Carousel.css';
 //import {shopDishes, dishes, selectedFood} from './dishes'
 import { connect } from 'redux-zero/react';
@@ -15,7 +15,7 @@ const InfoDish = ({ image, name, description, price, nutritional, nutritionalInf
 			role="listbox">
 			<div className="item active">
 				<div className="col-lg-3 pull-left" >
-					<img className="img1" src={image}/>
+					<img className="img1" src={image} alt=""/>
 				</div>
 				<div className="col-lg-6 info-middle">
 					<br />

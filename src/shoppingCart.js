@@ -1,7 +1,7 @@
 import React from 'react';
 import './shoppingCart.css';
 import {NavLink} from 'react-router-dom';
-import {dishes, shopDishes } from './dishes';
+//import {dishes, shopDishes } from './dishes';
 import {removeDish, deleteAll} from './actions';
 import './App.css';
 

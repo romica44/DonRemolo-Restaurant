@@ -389,14 +389,18 @@ h3{
 .products {
   position:relative;
   width: 600px;
+  padding-left: 1px;
   padding-right: 400px;
   white-space: pre; 
   margin-bottom: 20px;
   background: #fff url(http://demos.telerik.com/kendo-ui/content/spa/websushi/css/images/item-separator.png) repeat-y right top;
   text-align: center;
- 
+  border-radius: 1rem;
+  border-color: red;
  
 }
+
+
 
 .view-details, .view-details:hover {
   display: block;
@@ -414,22 +418,30 @@ h3{
   background-color: rgba(0,0,0,0);
 }
 
-.view-details:hover strong {
+/* .view-details:hover strong {
   color: #2e2e2e;
-}
+} */
 
-.view-details:hover:after {
+/* .view-details:hover:after {
   background-color:  rgba(0,0,0,0.75);
   background-repeat: no-repeat;
   background-image: url(http://demos.telerik.com/kendo-ui/content/spa/websushi/css/images/arrow-right.png);
   background-position: 50% 50%;
-}
+} */
 
 .main-image {
-  position: relative;
+  
   width: 200px;
   height: 200px;
+  padding-left: 1px;
+
 }
+
+li a img{
+  border-radius: 1rem;
+}
+
+
 
 .products h2 {
   color: #ab7829;
@@ -444,7 +456,7 @@ h3{
   font-size: 21px;
   font-weight: normal;
   padding-top: 25px;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   width: 120%;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -664,15 +676,15 @@ p#details-total-price span{
   -o-transition: all .3s;
 }
 
-#nutrition-info{
+/* #nutrition-info{
   display:inline-block;
   width: 200px;
   height: 200px;
   font-size: 13px;
   vertical-align: top;
-}
+} */
 
-
+/* 
 #nutrition-info h2{
   color: #3c3c3c;
   padding: 30px 20px 20px;
@@ -697,7 +709,7 @@ p#details-total-price span{
   line-height: 16px;
   text-align: right;
   width: 45px;
-}
+} */
 
 .last-div{
   border-left-color: #5e5b5b;
@@ -865,9 +877,9 @@ table tbody td:first-child + td + td {
   width: 200px;
 }
 
-table tbody td:first-child + td + td p{
+/* table tbody td:first-child + td + td p{
 
-}
+} */
 
 .table-price{
   font-size: 21px;

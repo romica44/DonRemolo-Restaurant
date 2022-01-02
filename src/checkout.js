@@ -1,7 +1,7 @@
 import React  from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { connect } from "redux-zero/react";
 import Footer from './footer';
 import Header from './header';
@@ -61,9 +61,10 @@ const Checkout = ({ shopDishes }) => {
                         <span data-bind="text: totalPrice">${totalPrice}</span>
                     </p>
                     <NavLink to={"/"} className="cancel-order" data-bind="click: emptyCart" onClick={() => deleteAll()}>cancelar</NavLink>
-                    <NavLink to={"https://api.whatsapp.com/send?phone="} className="btn btn order-now" data-bind="click: proceed" 
-                         onClick={() => deleteAll()}>Enviar pedido
-                    </NavLink>
+                    <Link to={"https://api.whatsapp.com/send?phone=5493415853137"} className="btn btn order-now" data-bind="click: proceed" 
+                         onClick={() => alert('Su pedido fue enviado')}>Enviar pedido
+                         
+                    </Link>
                 </div>
                 <div id="checkout-bottom-image"></div>
             </div>

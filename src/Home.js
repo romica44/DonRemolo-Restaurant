@@ -13,8 +13,8 @@ const Lista_Dishes = ({ image, name, price, index, moveSlides }) => {
         <img className="main-image" src={image} />
         <strong>{name}</strong>
         <span className="price">
-          <span>$</span>
-          <span>{price}</span>
+          <span></span>
+          <strong>${price}</strong>
         </span>
       </a>
       <button className="add-to-cart" onClick={() => addDishes(index)}>Agregar al carrito</button>

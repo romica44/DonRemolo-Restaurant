@@ -30,7 +30,7 @@ export const pizzas = [
 	{
 		id: 3,
 		image: "https://i.ibb.co/48PZYKb/empanada-jamonyqueso.webp",
-		name: "Empanadas de jamón y queso",
+		name: "Empanadas JYQ",
 		description: "Empanadas rellenas con jamón y queso",
 		price: 210.00,
 		count:1,
@@ -66,7 +66,7 @@ export const pizzas = [
 	{
 		id: 7,
 		image: "https://i.ibb.co/mvFMXV7/almendrado.jpg",
-		name: "Postre helado almendrado",
+		name: "Postre almendrado",
 		description: "Almendrado",
 		price: 300.00,
 		count:1,

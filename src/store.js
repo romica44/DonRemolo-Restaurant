@@ -1,9 +1,9 @@
 import createStore from 'redux-zero'
-import {dishes, shopDishes, selectedFood} from './dishes'
+import {pizzas, shopDishes, selectedFood} from './dishes'
 
 const initialState = {
-   dishes: dishes,
-   shopDishes:shopDishes,
+   pizzas: pizzas,
+   shopDishes: shopDishes,
    selectedFood: 0,
 }
 

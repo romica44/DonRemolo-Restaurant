@@ -1,8 +1,10 @@
 import React from 'react';
+import ReactDOM from 'react-dom'
 import { connect } from 'redux-zero/react';
 import { NavLink } from 'react-router-dom';
 import { addDishes, moveSlides } from './actions'
 import './App.css';
+import { pizzas,shopDishes} from './dishes';
 
 const Lista_Dishes = ({ image, name, price, index, moveSlides }) => {
   return (
@@ -19,9 +21,9 @@ const Lista_Dishes = ({ image, name, price, index, moveSlides }) => {
     </li>
   );
 }
-const Home = ({ dishes }) => {
+const Home = ({pizzas, shopDishes}) => {
 
-  const listaComponent = dishes.map((item, index) => {
+  const listaComponent = pizzas.map((item, index) => {
     return <Lista_Dishes
       key={index}
       image={item.image}
@@ -40,4 +42,6 @@ const Home = ({ dishes }) => {
   </section>)
 }
 
-export default Home
+
+
+export default Home;

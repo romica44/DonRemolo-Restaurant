@@ -354,13 +354,48 @@ h3{
   float: left;
 }
 
+#pizzas{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  color: grey;
+}
+
+#empanadas{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  color: grey;
+}
+
+#bebibas{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  color: grey;
+}
+
+#postres{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  color: grey;
+}
 .products {
-  position: relative;
-  width: 200px;
+  position:relative;
+  width: 600px;
+  padding-right: 400px;
+  white-space: pre; 
   margin-bottom: 20px;
   background: #fff url(http://demos.telerik.com/kendo-ui/content/spa/websushi/css/images/item-separator.png) repeat-y right top;
-  padding-bottom: 62px;
+  padding-bottom: 40px;
   text-align: center;
+ 
+ 
 }
 
 .view-details, .view-details:hover {

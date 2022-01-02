@@ -2,7 +2,7 @@ import store from './store';
 
 export const addDishes = (index) => {
     let newList = [...store.getState().shopDishes]
-    let original = [...store.getState().dishes]
+    let original = [...store.getState().pizzas]
     for(let i in newList){
         if(newList[i].id===index){
             newList[i].count+=1;

@@ -4,6 +4,7 @@ import { connect } from "redux-zero/react";
 import Footer from './footer';
 import Header from './header';
 import ShoppingCart from './shoppingCart';
+import { addDishes } from './actions'
 
 
 
@@ -18,7 +19,7 @@ const Checkout = ({ shopDishes }) => {
                                 <img src={item.image} alt=""/></div>
                             <span class="product-name" data-bind="text: item.name">{item.name}</span>
                         </td>
-                        <td><input type="number" class="inputnumber k-widget k-numerictextbox" name="lastname" value={item.count} /></td>
+                        <td><input type="submit" value={item.count}  /></td>
                         <td>
                             <p class="table-price" data-bind="text: itemPrice"> ${item.price}</p><p></p>
                         </td>

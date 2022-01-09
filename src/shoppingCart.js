@@ -32,7 +32,7 @@ const ShoppingCart = ({shopDishes}) => {
 		)
 	})
 
-	let totalDishes = shopDishes.length;
+	//let totalDishes = shopDishes.length;
 	let totalPrice = shopDishes.reduce(function (total, dish){
 		return total + (dish.price*dish.count);
 	}, 0);

@@ -4,7 +4,7 @@ import { connect } from "redux-zero/react";
 import Footer from './footer';
 import Header from './header';
 import ShoppingCart from './shoppingCart';
-import { deleteAll } from './actions';
+
 
 
 const Checkout = ({ shopDishes }) => {
@@ -29,16 +29,16 @@ const Checkout = ({ shopDishes }) => {
 
     });
 
-    function completeAndRedirect(){
-        alert('Su pedido fue enviado. En breve lo contactararemos');
+    // function completeAndRedirect(){
+    //     alert('Su pedido fue enviado. En breve lo contactararemos');
      
-    }
+    // }
 
-    let totalDishes = shopDishes.length;
+    //let totalDishes = shopDishes.length;
     let totalPrice = shopDishes.reduce(function (total, dish) {
         return total + (dish.price * dish.count);
     }, 0);
-
+   
     console.log("lis", Listdishs)
     console.log("lis", shopDishes)
     // primera vista
@@ -89,8 +89,8 @@ const Checkout = ({ shopDishes }) => {
                             <textarea name="consulta" id="consulta" cols="30" rows="4" class="form-control text-start" placeholder="Su mensaje"></textarea>
                         </div>
                         <div class="d-flex justify-content-center mt-5" id="buttons">
-                        <form action="" method="post">
-                        <button Onclick={completeAndRedirect()} type="submit" class="btn btn-default rounded-pill p-3 ps-5 pe-5 custom-btn">ENVIAR</button>
+                        <form action="#" method="post">
+                        <button type="submit" class="btn btn-default rounded-pill p-3 ps-5 pe-5 custom-btn">ENVIAR</button>
                         </form>
                         <form action="/#" >
                         <button type="submit" class="btn btn-default rounded-pill p-3 ps-5 pe-5 custom-btn">CANCELAR</button>

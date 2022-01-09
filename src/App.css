@@ -557,6 +557,12 @@ li a img{
   height: 200px;
 }
 
+.scaled {
+ transform: scale(0.7);
+ padding-right:1500px;
+ margin-top: 0;
+}
+
 #description h1{
   padding-top: 30px;
   padding-left: 30px;

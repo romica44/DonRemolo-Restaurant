@@ -11,7 +11,7 @@ import registerServiceWorker from './registerServiceWorker';
 // import {dishes} from './dishes'
 import {HashRouter, Switch, Route} from 'react-router-dom'
 import App from './App';
-//import Enviado from './enviar'
+import Enviado from './enviar'
 
 const Index = () => (
    <Provider store={store}>
@@ -22,7 +22,7 @@ const Index = () => (
             <Route  path = "/home" component={App}/>
             <Route  path = "/carousel" component={CarouselView}/>
             <Route  path = "/details" component={CheckoutView}/>
-            {/*<Route  exact path = "/enviar" component={Enviado}/>*/}
+            <Route  exact path = "/enviar" component={Enviado}/>
         </Switch>
       </HashRouter>
    </Provider>

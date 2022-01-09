@@ -1,7 +1,5 @@
 import React  from 'react';
-//import logo from './logo.svg';
 import './App.css';
-import { NavLink, Link } from 'react-router-dom';
 import { connect } from "redux-zero/react";
 import Footer from './footer';
 import Header from './header';
@@ -61,11 +59,10 @@ const Checkout = ({ shopDishes }) => {
                         <span data-bind="text: totalPrice">${totalPrice}</span>
                     </p>
                     
-            <div class="content-page">
-                <div class="row mt-5 mb-5">    
+            <div class="d-flex justify-content-center mt-5">
+                <div class="row mt-5 mb-5"><h1 class="font-title">Registre sus datos</h1>  
                     <div class="col-12 col-md-6">
-                    <form><Checkout shopDishes={shopDishes} /> </form>
-                    <form action="#" method="post" class="needs-validation row-small-800" novalidate>
+                    <form class="needs-validation row-small-800" novalidate>
                        <div class="mb-3">
                           <input type="text" class="form-control rounded-pill text-start" id="email" aria-describedby="emailHelp" placeholder="Nombres" required />
                             <div class="invalid-feedback">
@@ -87,21 +84,20 @@ const Checkout = ({ shopDishes }) => {
                         <div class="mb-3">
                             <textarea name="consulta" id="consulta" cols="30" rows="4" class="form-control text-start" placeholder="Su mensaje"></textarea>
                         </div>
-                        <div class="d-flex justify-content-center mt-5">
-                            <button type="submit" class="btn btn-default rounded-pill p-3 ps-5 pe-5 custom-btn">ENVIAR</button>
+                        <div class="d-flex justify-content-center mt-5" id="buttons">
+                        <form action="#" method="post">
+                        <button type="submit" class="btn btn-default rounded-pill p-3 ps-5 pe-5 custom-btn">ENVIAR</button>
+                        </form>
+                        <form action="/#" >
+                        <button type="submit" class="btn btn-default rounded-pill p-3 ps-5 pe-5 custom-btn">CANCELAR</button>
+                        </form>
                         </div>
                     </form>
                     </div>
                 </div>   
-             </div>
-                        
-                    
-                    <NavLink to={"/"} className="cancel-order" data-bind="click: emptyCart" onClick={() => deleteAll()}>cancelar</NavLink>
-                    <Link to={"/enviar"} className="btn btn order-now" data-bind="click: proceed" 
-                         onClick={() => alert('Rellene sus datos para confirmar el pedido')}>Enviar pedido                        
-                    </Link>
-                </div>
-                <div id="checkout-bottom-image"></div>
+             </div>              
+    </div>
+            <div id="checkout-bottom-image"></div>
             </div>
         </section>
     )

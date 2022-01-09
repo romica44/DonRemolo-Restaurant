@@ -1018,6 +1018,15 @@ table tbody td:first-child + td + td {
   -o-transition: all .3s;
 }
 
+.mb-3{
+  padding-left: 30px;
+  width: 700px;
+}
+
+#buttons{
+  padding-left: 300px;
+}
+
 
 /*footer section*/
 #footer{

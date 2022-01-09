@@ -29,6 +29,10 @@ const Checkout = ({ shopDishes }) => {
 
     });
 
+    function completeAndRedirect(){
+        alert('Su pedido fue enviado. En breve lo contactararemos');
+     
+    }
 
     let totalDishes = shopDishes.length;
     let totalPrice = shopDishes.reduce(function (total, dish) {
@@ -85,8 +89,8 @@ const Checkout = ({ shopDishes }) => {
                             <textarea name="consulta" id="consulta" cols="30" rows="4" class="form-control text-start" placeholder="Su mensaje"></textarea>
                         </div>
                         <div class="d-flex justify-content-center mt-5" id="buttons">
-                        <form action="#" method="post">
-                        <button type="submit" class="btn btn-default rounded-pill p-3 ps-5 pe-5 custom-btn">ENVIAR</button>
+                        <form action="" method="post">
+                        <button Onclick={completeAndRedirect()} type="submit" class="btn btn-default rounded-pill p-3 ps-5 pe-5 custom-btn">ENVIAR</button>
                         </form>
                         <form action="/#" >
                         <button type="submit" class="btn btn-default rounded-pill p-3 ps-5 pe-5 custom-btn">CANCELAR</button>
